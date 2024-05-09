@@ -18,15 +18,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3  |  R     |   |  Y  |  U   |  I  |  O  |  P  |
-// |  TAB  |  B  |  W  |  E  |  G     |   |  H  |  J   |  K  |  L  |  ;  |
-// |  SFT  |  A  |  S  |  D  |  CTRL  |   |  N  |  M   |  ,  |  .  |  /  |
-//               |  ^  | LWR | SPC    |   | ENT | RSE  | ALT |
+// |  ESC   |  1  |  2  |  3  |  R  |   |  Y  |  U   |  I  |  O  |  P  |
+// |  SHFT  |  B  |  W  |  E  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  CTRL  |  A  |  S  |  D  |  4  |   |  N  |  M   |  ,  |  .  |  /  |
+//                |  ^  | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-    &kp ESC   &kp N1       &kp N2  &kp N3 &kp R        &kp Y &kp U  &kp I     &kp O   &kp P    
-    &kp TAB   &kp B        &kp W   &kp E &kp G         &kp H &kp J  &kp K     &kp L   &kp SEMI 
-    &kp LSHFT &kp A        &kp S   &kp D &kp LCTRL     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
-              &kp DE_CARET &mo 1   &kp SPACE           &kp RET &mo 2 &kp RALT
+    &kp ESC   &kp N1       &kp N2  &kp N3 &kp R     &kp Y &kp U  &kp I     &kp O   &kp P    
+    &kp LSHFT   &kp B      &kp W   &kp E &kp G      &kp H &kp J  &kp K     &kp L   &kp SEMI 
+    &kp LCTRL &kp A        &kp S   &kp D &kp N4     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
+              &kp DE_CARET &mo 1   &kp SPACE        &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
