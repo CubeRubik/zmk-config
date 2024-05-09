@@ -18,15 +18,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC   |  1  |  2  |  3  |  G  |   |  Y  |  U   |  I  |  O  |  P  |
-// |  SHFT  |  B  |  W  |  E  |  R  |   |  H  |  J   |  K  |  L  |  ;  |
-// |  CTRL  |  A  |  S  |  D  |  4  |   |  N  |  M   |  ,  |  .  |  /  |
-//                |  ^  | LWR | SPC |   | ENT | RSE  | ALT |
+// |  ESC   |  1  |  2  |  3  |  G   |   |  Y  |  U   |  I  |  O  |  P  |
+// |  TAB   |  B  |  W  |  E  |  R   |   |  H  |  J   |  K  |  L  |  ;  |
+// |  CTRL  |  A  |  S  |  D  |  4   |   |  N  |  M   |  ,  |  .  |  /  |
+//                |  ^  | LWR | SHFT |   | ENT | RSE  | ALT |
                         bindings = <
-    &kp ESC   &kp N1       &kp N2  &kp N3 &kp G     &kp Y &kp U  &kp I     &kp O   &kp P    
-    &kp LSHFT   &kp B      &kp W   &kp E  &kp R     &kp H &kp J  &kp K     &kp L   &kp SEMI 
-    &kp LCTRL &kp A        &kp S   &kp D  &kp N4    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
-              &kp DE_CARET &mo 1   &kp SPACE        &kp RET &mo 2 &kp RALT
+    &kp ESC   &kp N1  &kp N2       &kp N3 &kp G       &kp Y &kp U  &kp I     &kp O   &kp P    
+    &kp TAB   &kp B   &kp W        &kp E  &kp R       &kp H &kp J  &kp K     &kp L   &kp SEMI 
+    &kp LCTRL &kp A   &kp S        &kp D  &kp N4      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
+                      &kp DE_CARET &mo 1  &kp LSHFT   &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -36,10 +36,10 @@
 // |     |     |     |     |     |   |     |     |     |     |     |
 //             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp N1       &kp N2  &kp N3       &kp N4  &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 
+   &kp N1       &kp N2  &kp N3        &kp N4  &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 
    &bt BT_SEL 0 &kp RALT &bt BT_SEL 2 &kp TAB &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
-   &trans       &trans  &trans       &trans  &trans         &trans   &trans   &trans &trans    &trans 
-                        &kp LGUI     &trans  &kp SPACE      &kp RET  &trans   &kp RALT
+   &trans       &trans  &trans        &trans  &trans         &trans   &trans   &trans &trans    &trans 
+                        &kp LGUI      &trans  &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
