@@ -20,7 +20,7 @@
                 zmk,matrix_transform = &five_column_transform;
         };
         behaviors {
-            ht: holt_tap {   
+            ht: hold_tap {   
                 label = "hold_tap";
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
