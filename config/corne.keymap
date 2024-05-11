@@ -43,42 +43,42 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q      |  W      |  E       |  R      |  T   |     |  Y   |  U      |  I      |  O     |  P       |
+// |  Q      |  W      |  E       |  R      |  T   |     |  Z   |  U      |  I      |  O     |  P       |
 // |  A SFT  |  S ALT  |  D CTRL  |  F GUI  |  G   |     |  H   |  J GUI  |  K CTRL |  L ALT |  ESC SFT |
-// |  Z      |  X      |  C       |  V      |  B   |     |  N   |  M      |  ,      |  .     |  ?       |
+// |  Y      |  X      |  C       |  V      |  B   |     |  N   |  M      |  ,      |  .     |  ?       |
 //                     |  TAB     |  LWR    |  SPC |     |  ENT |  RSE    |  BSPC   |
                         bindings = <
-    &kp Q    &kp W    &kp E     &kp R &kp T       &kp Z   &kp U    &kp I     &kp O   &kp P    
+    &kp Q    &kp W    &kp E     &kp R &kp T       &kp Y   &kp U    &kp I     &kp O   &kp P    
     HRML(A,  S,       D,        F)    &kp G       &kp H   HRMR(J, K,        L,       ESC)    
-    &kp Y    &kp X    &kp C     &kp V &kp B       &kp N   &kp M    &kp COMMA &kp DOT &kp QMARK 
+    &kp Z    &kp X    &kp C     &kp V &kp B       &kp N   &kp M    &kp COMMA &kp DOT &kp QMARK 
                       &kp TAB   &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8   |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT | DWN  | UP  | RGT |
-// |     |     |     |     |     |   |     |     |      |     |     |
-//             | GUI |     | SPC |   | ENT |     | ALT  |
+// |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8    |  9  |  0  |
+// | SFT |     |     |     |     |     |     | LFT | DWN   | UP  | RGT |
+// | BT1 | BT2 | BT3 | BT4 | BT5 |     |  Ö  |  Ü  |  Ä    |  ß  |     |
+//             | GUI |     | SPC |     | ENT |     | BSPC  |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6  &kp N7   &kp N8   &kp N9  &kp N0 
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans  &kp LEFT &kp DOWN &kp UP  &kp RIGHT  
-   &trans       &trans       &trans       &trans       &trans         &trans  &trans   &trans   &trans  &trans 
-                             &kp LGUI     &trans       &kp SPACE      &kp RET &trans   &kp RALT
+   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6          &kp N7            &kp N8           &kp N9      &kp N0 
+   &trans       &trans       &trans       &trans       &trans           &trans          &kp LEFT          &kp DOWN         &kp UP      &kp RIGHT  
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp DE_O_UMLAUT &kp DE_U_UMLAUT   &kp DE_A_UMLAUT  &kp DE_SZ   &trans 
+                             &kp LGUI     &trans       &kp SPACE        &kp RET         &trans            &kp BSPC
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  !  |  "   |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |  !  |  "   |  §  |  $  |  %  |   |  &  |  /  |  (  |  )  |  =  |
 // |     |      |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
 // |     |      |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //              | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp EXCL &kp DQT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR 
-   &trans   &trans  &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH 
-   &trans   &trans  &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE 
-                    &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp DE_EXCL &kp DE_DQT &kp DE_SECT &kp DLLR &kp DE_PRCNT   &kp DE_AMPS &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL 
+   &trans      &trans     &trans      &trans   &trans         &kp MINUS   &kp EQUAL     &kp LBKT    &kp RBKT    &kp BSLH 
+   &trans      &trans     &trans      &trans   &trans         &kp UNDER   &kp PLUS      &kp LBRC    &kp RBRC    &kp PIPE 
+                          &kp LGUI    &trans   &kp SPACE      &kp RET     &trans        &kp RALT
                         >;
                 };
         };
