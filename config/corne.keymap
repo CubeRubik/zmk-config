@@ -22,7 +22,7 @@
         behaviors {
             ht: holt_tap {   
                 label = "hold_tap";
-                compatible = "zmk,bahvior-hold-tap";
+                compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
                 tapping-term-ms = <220>;
