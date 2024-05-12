@@ -16,9 +16,9 @@
 
 // Layers
 #define Default 0
-#define Lower 1
-#define Raised 2
-#define Tri 3
+#define LOWER 1
+#define RAISED 2
+#define TRI 3
 
 / {
         chosen {
@@ -34,9 +34,17 @@
                 quick-tap-ms = <150>;
                 global-quick-tap;
                 bindings = <&kp>, <&kp>;
-
-
                 };
+
+         conditional_layers {
+            compatible = "zmk, conditional-layers";
+            tri_layer {
+                if-layers = <LOWER RAISED>;
+                then-layer = <TRI>;
+                        }
+                };
+
+
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -81,5 +89,20 @@
                           &kp LGUI    &trans   &kp SPACE      &kp RET     &trans        &kp RALT
                         >;
                 };
+
+                Tri_layer {
+// -----------------------------------------------------------------------------------------
+// |  !  |  "   |  §  |  $  |  %  |   |  &  |  /  |  (  |  )  |  =  |
+// |     |      |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// |     |      |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+//              | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans      &trans     &trans      &trans   &trans      &trans      &trans     &trans      &trans   &trans 
+   &trans      &trans     &trans      &trans   &trans      &trans      &trans     &trans      &trans   &trans
+   &trans      &trans     &trans      &trans   &trans      &trans      &trans     &trans      &trans   &trans 
+                          &kp LGUI    &trans   &kp SPACE   &kp RET     &trans     &kp RALT
+                        >;
+                };
+
         };
 };
