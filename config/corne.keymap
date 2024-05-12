@@ -41,7 +41,7 @@
             tri_layer {
                 if-layers = <LOWER RAISED>;
                 then-layer = <TRI>;
-                        }
+                        };
                 };
 
 
