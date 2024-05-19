@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods
-#define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LALT k2 &ht LCTRL k3 &ht GUI k4
-#define HRMR(k1,k2,k3,k4) &ht GUI k1 &ht LCTRL k2 &ht RALT k3 &ht RSHIFT k4
+#define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LALT k2 &ht LCTRL k3 &ht LEFT_GUI k4
+#define HRMR(k1,k2,k3,k4) &ht LEFT_GUI k1 &ht LCTRL k2 &ht RALT k3 &ht RSHIFT k4
 
 // Layers
 #define Default 0
@@ -79,13 +79,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  !  |  "   |  §  |  $  |  %  |   |  &  |  /  |  (    |  )  |  =  |
-// |  *  |  #   |  `  |  ´  |     |   |  ~  |     |  [    |  ]  |  \  |
-// |  +  |  -   |  ^  |  <  |  >  |   |     |     |  {    |  }  | "|" |
+// |  *  |  #   |  <  |  >  |  ^  |   |  '  |  +  |  [    |  ]  |  \  |
+// |     |      |  `  |  `  |     |   |  ~  |  -  |  {    |  }  | "|" |
 //              | TAB |     | SPC |   | ENT |     |  BSPC |
                         bindings = <
    &kp DE_EXCL &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT   &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
-   &kp DE_STAR &kp DE_HASH  &kp DE_GRAVE  &kp DE_ACUTE &trans         &kp DE_TILDE  &trans        &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
-   &kp DE_PLUS &kp DE_MINUS &kp DE_CARET  &kp DE_LT    &kp DE_GT      &trans        &trans        &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
+   &kp DE_STAR &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET   &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
+   &trans      &trans       &kp DE_GRAVE  &kp DE_ACUTE &trans         &kp DE_TILDE  &kp DE_MINUS  &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
                             &kp TAB       &trans       &kp SPACE      &kp RET       &trans        &kp BSPC
                         >;
                 };
