@@ -18,15 +18,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |     |        |   E    |     |     |   |     |      |      |         |     |
-// |     |  Left  |  Down  |     |     |   |     |      |  UP  |  Right  |     |
-// |     |        |        |  V  |     |   |  N  |      |      |         |     |
-//                |  GUI   | LWR | SPC |   | ENT | RSE  | ALT  |
+// |     |     |  E  |     |     |   |     |        |        |      |         |     
+// |     |     |     |  F  |     |   |     |  Left  |  Down  |  UP  |  Right  |     
+// |     |     |     |  V  |     |   |  N  |        |        |      |         |     
+//             | GUI | LWR | SPC |   | ENT |  RSE   | ALT  |
                         bindings = <
-    &trans &trans   &kp E    &trans &trans      &trans &trans  &trans   &trans   &trans    
-    &trans &kp LEFT &kp DOWN &trans &trans      &trans &trans  &trans   &kp UP   &kp RIGHT  
-    &trans &trans   &trans   &kp V  &trans      &kp N  &trans  &trans   &trans   &trans
-                    &kp LGUI &mo 1  &kp SPACE   &kp RET &mo 2 &kp RALT
+    &trans &trans  &kp E    &trans &trans      &trans  &trans   &trans    &trans   &trans    
+    &trans &trans  &trans   &kp F  &trans      &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT  
+    &trans &trans  &trans   &kp V  &trans      &kp N   &trans   &trans    &trans   &trans
+                   &kp LGUI &mo 1  &kp SPACE   &kp RET &mo 2    j&kp RALT
                         >;
                 };
         };
