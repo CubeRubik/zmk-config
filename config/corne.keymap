@@ -18,15 +18,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC      |  Q  |  W  |  E  |   F   |   |     |     |     |     |     |
-// |  SHIFT    |  A  |  S  |  D  |   G   |   |     |     |     |     |     |
-// |  T        |  R  |  Z  |  V  |  TAB  |   |     |     |     |     |     |
-//                   | RSE | RSE |  SPC  |   |     |     |     |
+// |  ESC      |   Q   |  W  |  E  |   R       |   |     |     |     |     |     |
+// |  SPACE    |   A   |  S  |  D  |   SHIFT   |   |     |     |     |     |     |
+// |  ALT      |   X   |  G  |  R  |  TAB      |   |     |     |     |     |     |
+//                     | RSE | LWR |  F      |   |     |     |     |
                         bindings = <
-    &kp ESC    &kp Q &kp W &kp E &kp F       &trans   &trans   &trans  &trans   &trans 
-    &kp LSHIFT &kp A &kp S &kp D &kp G       &trans   &trans   &trans  &trans   &trans 
-    &kp T      &kp R &kp Y &kp V &kp TAB     &trans   &trans   &trans  &trans   &trans 
-                     &mo 2 &mo 1 &kp SPACE   &trans   &trans   &trans
+    &kp ESC    &kp Q    &kp W &kp E &kp R       &trans   &trans   &trans  &trans   &trans 
+    &kp SPACE  &kp A    &kp S &kp D &kp LSHIFT  &trans   &trans   &trans  &trans   &trans 
+    &kp ALT    &kp X    &kp G &kp R &kp TAB     &trans   &trans   &trans  &trans   &trans 
+                        &mo 2 &mo 1 &kp F       &trans   &trans   &trans
                         >;
                 };
                 lower_layer {
