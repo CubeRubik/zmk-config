@@ -25,21 +25,21 @@
                         bindings = <
     &kp ESC    &kp Q    &kp W &kp E &kp R       &trans   &trans   &trans  &trans   &trans 
     &kp SPACE  &kp A    &kp S &kp D &kp LSHIFT  &trans   &trans   &trans  &trans   &trans 
-    &kp ALT    &kp X    &kp G &kp R &kp TAB     &trans   &trans   &trans  &trans   &trans 
+    &kp RALT    &kp X   &kp G &kp R &kp TAB     &trans   &trans   &trans  &trans   &trans 
                         &mo 2 &mo 1 &kp F       &trans   &trans   &trans
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  1  |  2   |  3  |  4  |  5  |   |     |     |     |     |     |
-// |  I  |  P   |  0  |  ß  |  ´  |   |     |     |     |     |     |
-// |  H  |  K   |  L  |  M  |  J  |   |     |     |     |     |     |
-//              |     |     | SPC |   |     |     |     |
+// |     |      |  UP  |     |     |   |     |     |     |     |     |
+// |     | LFT  |  DWN | RGT |     |   |     |     |     |     |     |
+// |     |      |      |     |     |   |     |     |     |     |     |
+//              |      |     | SPC |   |     |     |     |
                         bindings = <
-   &kp N1   &kp N2      &kp N3   &kp N4      &kp N5         &trans   &trans   &trans  &trans   &trans 
-   &kp I    &kp P       &trans   &kp DE_SZ   &kp DE_ACUTE   &trans   &trans   &trans  &trans   &trans 
-   &kp H    &kp K       &kp L    &kp M       &kp J          &trans   &trans   &trans  &trans   &trans 
-                        &trans   &trans      &kp SPACE      &trans   &trans   &trans
+   &trans   &trans    &kp UP    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
+   &trans   &kp LEFT  &kp DOWN  &kp RIGHT   &trans         &trans   &trans   &trans  &trans   &trans 
+   &trans   &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
+                      &trans    &trans      &kp SPACE      &trans   &trans   &trans
                         >;
                 };
 
