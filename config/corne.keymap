@@ -42,8 +42,6 @@
         combo   {
             if-layers = <1 2>;
             then-layer = <3>;
-            if-layers = <1 4>;
-            then-layer = <1>;
                         };
                 };
         };
@@ -89,10 +87,10 @@
 
                 LeagueOfLegends {
                         bindings = <
-    &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &mo HRA_S  &kp SPACE      &trans   &to HRA   &trans  
+    &kp TAB     &kp N1  &kp N2   &kp N3    &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
+    &kp LSHFT   &kp Q   &kp W    &kp E     &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp LCTRL   &kp A   &kp B    &kp D     &kp F          &trans   &trans     &trans  &trans   &trans 
+                        &kp RALT &mo 1     &kp SPACE      &trans   &to HRA   &trans  
                         >;
                 };
         };
