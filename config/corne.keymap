@@ -78,8 +78,8 @@
 
                 COMBO {
                         bindings = <
-   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
-   &tog HRA     &tog LOL       &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans
+   &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
+   &to HRA     &to LOL       &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
                         >;
@@ -87,10 +87,10 @@
 
                 LeagueOfLegends {
                         bindings = <
-    &kp TAB     &kp N1  &kp N2   &kp N3  &kp N4          &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W    &kp E   &kp R           &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp B    &kp D   &kp F           &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &mo 1  &kp SPACE       &trans   &tog LOL   &trans  
+    &kp TAB     &kp N1  &kp N2   &kp N3  &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
+    &kp LSHFT   &kp Q   &kp W    &kp E   &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp LCTRL   &kp A   &kp B    &kp D   &kp F          &trans   &trans     &trans  &trans   &trans 
+                        &kp RALT &mo 1  &kp SPACE       &trans   &to HRA   &trans  
                         >;
                 };
         };
