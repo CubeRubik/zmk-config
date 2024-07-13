@@ -90,7 +90,7 @@
     &kp TAB     &kp N1  &kp N2   &kp N3  &kp N4          &kp ESC  &trans     &trans  &trans   &trans    
     &kp LSHFT   &kp Q   &kp W    &kp E   &kp R           &trans   &kp RALT   &trans  &kp TAB  &trans 
     &kp LCTRL   &kp A   &kp B    &kp D   &kp F           &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &trans  &kp SPACE       &trans   &tog LOL   &trans  
+                        &kp RALT &mo 1  &kp SPACE       &trans   &tog LOL   &trans  
                         >;
                 };
         };
