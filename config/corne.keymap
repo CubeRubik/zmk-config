@@ -85,7 +85,7 @@
                         >;
                 };
 
-                League of Legends {
+                LeagueOfLegends {
                         bindings = <
     &kp TAB     &kp N1  &kp N2   &kp N3  &kp N4          &kp ESC  &trans     &kp RALT  &kp TAB  &trans    
     &kp LSHFT   &kp Q   &kp W    &kp E   &kp R           &trans   &trans     &trans  &trans  &trans 
