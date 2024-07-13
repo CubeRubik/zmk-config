@@ -15,10 +15,10 @@
 #define HRMR(k1,k2,k3,k4) &ht LEFT_GUI k1 &ht LCTRL k2 &ht RALT k3 &ht RSHIFT k4
 
 // Layers
-#define Default 0
-#define LOWER 1
-#define RAISED 2
-#define TRI 3
+#define HRA_D   0
+#define HRA_S   1
+#define HRA_T   2
+#define Combo   3
 
 / {
         chosen {
@@ -36,25 +36,19 @@
                 bindings = <&kp>, <&kp>;
                 };
 
-         
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+        combo   {
             if-layers = <1 2>;
             then-layer = <3>;
+                        };
+                };
         };
-    };
 
-        };
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q      |  W      |  E       |  R      |  T   |     |  Z   |  U      |  I      |  O     |  P       |
-// |  A SFT  |  S ALT  |  D CTRL  |  F GUI  |  G   |     |  H   |  J GUI  |  K CTRL |  L ALT |  ESC SFT |
-// |  Y      |  X      |  C       |  V      |  B   |     |  N   |  M      |  ,      |  .     |  ?       |
-//                     |  TAB     |  LWR    |  SPC |     |  ENT |  RSE    |  BSPC   |
+                HRA_Default {
                         bindings = <
     &kp Q    &kp W    &kp E     &kp R &kp T       &kp Y   &kp U   &kp I        &kp O      &kp P    
     HRML(A,  S,       D,        F)    &kp G       &kp H   HRMR(J, K,           L,         ESC)    
@@ -62,12 +56,8 @@
                       &kp TAB   &mo 1 &kp SPACE   &kp RET &mo 2   &kp BSPC
                         >;
                 };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  1    |  2   |  3   |  4  |  5  |     |  6  |  7  |  8    |  9  |  0  |
-// |  SFT  | ALT  | CTRL | GUI |     |     |     | LFT | DWN   | UP  | RGT |
-// |       |      |      |     |     |     |     |  Ö  |  Ü    |  Ä  |  ß  |
-//                | TAB  |     | SPC |     | ENT |     | BSPC  |
+
+                HRA_Secondary {
                         bindings = <
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
    &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
@@ -76,12 +66,7 @@
                         >;
                 };
 
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  "   |  §  |  $  |  %  |   |  &  |  /  |  (    |  )  |  =  |
-// |  *  |  #   |  <  |  >  |  ^  |   |  '  |  +  |  [    |  ]  |  \  |
-// |  ~  |      |  `  |  `  |     |   |  _  |  -  |  {    |  }  | "|" |
-//              | TAB |     | SPC |   | ENT |     |  BSPC |
+                HRA_Tertiary {
                         bindings = <
    &kp DE_EXCL  &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT   &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
    &kp DE_STAR  &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET   &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
@@ -90,12 +75,7 @@
                         >;
                 };
 
-                Tri_layer {
-// -----------------------------------------------------------------------------------------
-// | F1  |  F2 |  F3  |  F4 |  F5 |    |  F6 |  F7  |  F8  |  F9  |  F11  |
-// | SFT | ALT | CTRL | GUI |     |    |     | CTRL |  ALT |  DEL |       |
-// | BT1 | BT2 | BT3  | BT4 | BT5 |    |     |      |      |      | BTCLR |
-//             | TAB  |     | SPC |    | ENT |      | BSPC |
+                COMBO {
                         bindings = <
    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
    &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans     &kp RCTRL   &kp RALT   &kp DELETE &trans
@@ -103,6 +83,5 @@
                              &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
                         >;
                 };
-
         };
 };
