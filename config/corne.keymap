@@ -20,8 +20,9 @@
 #define HRA_T   2
 #define Combo   3
 #define LOL     4
-#define LOL_S   5
-#define CS      6
+#define CS      5
+#define MC      6
+#define MC_S    7
 
 / {
         chosen {
@@ -81,7 +82,7 @@
                 COMBO {
                         bindings = <
    &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
-   &to HRA     &to LOL       &to CS       &trans       &trans           &trans     &trans     &trans      &trans     &trans
+   &to HRA     &to LOL       &to CS       &to MC       &trans           &trans     &trans     &trans      &trans     &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
                         >;
@@ -92,25 +93,34 @@
     &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
     &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
     &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &mo LOL_S  &kp SPACE      &trans   &to HRA   &trans  
-                        >;
-                };
-
-                League_of_Legends_LOWER {
-                        bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
-   &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
-   &trans       &trans       &trans       &trans       &trans           &trans   &kp DE_O_UMLAUT &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_SZ    
-                             &kp TAB      &trans       &kp SPACE        &kp RET  &trans          &kp BSPC
+                        &kp RALT &trans     &kp SPACE      &trans   &to HRA   &trans  
                         >;
                 };
 
                 Counterstrike {
                         bindings = <
-    &kp ESC   &kp N1  &kp N2       &kp N3  &kp N4      &kp ESC &trans  &kp RALT  &kp TAB  &trans    
-    &kp TAB   &kp B   &kp W        &kp E   &kp R       &trans  &kp F1  &kp F2    &trans   &trans
-    &kp LCTRL &kp A   &kp S        &kp D   &kp G       &trans  &trans  &trans    &trans   &trans
-                      &kp DE_CARET &kp N5  &kp LSHFT   &trans  &to HRA  &trans
+    &kp ESC   &kp N1  &kp N2       &kp N3  &kp N4      &kp ESC &trans    &kp F1  &kp F2   &trans    
+    &kp TAB   &kp B   &kp W        &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL &kp A   &kp S        &kp D   &kp G       &trans  &trans    &trans  &trans   &trans
+                      &kp DE_CARET &kp N5  &kp LSHFT   &trans  &to HRA   &trans
+                        >;
+                };
+
+                Minecraft {
+                        bindings = <
+    &kp ESC    &kp Q &kp W  &kp E &kp T          &kp ESC   &trans     &trans  &trans    &trans 
+    &kp LSHIFT &kp A &kp S  &kp D &kp G          &trans    &kp RALT   &trans  &kp TAB   &trans 
+    &kp LCTRL  &kp X &kp C  &kp V &kp TAB        &trans    &trans     &trans  &trans    &trans 
+                     &trans &mo MC_S &kp SPACE   &trans    &to HRA    &trans
+                        >;
+                };
+
+                Minecraft_Secondary {
+                        bindings = <
+   &kp N1   &kp N2    &kp N3   &kp N4    &kp N5        &trans   &trans   &trans  &trans   &trans 
+   &kp N6   &kp N7    &kp N8   &kp N9    &kp F11       &trans   &trans   &trans  &trans   &trans 
+   &trans   &trans    &trans   &trans    &trans        &trans   &trans   &trans  &trans   &trans 
+                      &trans   &trans    &kp SPACE     &trans   &trans   &trans
                         >;
                 };
         };
