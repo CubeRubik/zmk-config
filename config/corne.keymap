@@ -16,13 +16,15 @@
 
 // Layers
 #define HRA     0
-#define HRA_S   1
-#define HRA_T   2
+#define HRA_L   1
+#define HRA_R   2
 #define Combo   3
 #define LOL     4
 #define CS      5
 #define MC      6
-#define MC_S    7
+#define MC_L    7
+#define ER      8
+#define ER_L    9
 
 / {
         chosen {
@@ -82,7 +84,7 @@
                 COMBO {
                         bindings = <
    &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
-   &to HRA     &to LOL       &to CS       &to MC       &trans           &trans     &trans     &trans      &trans     &trans
+   &to HRA     &to LOL       &to CS       &to MC       &to ER           &trans     &trans     &trans      &trans     &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
                         >;
@@ -111,16 +113,34 @@
     &kp ESC    &kp Q &kp W  &kp E &kp T          &kp ESC   &trans     &trans  &trans    &trans 
     &kp LSHIFT &kp A &kp S  &kp D &kp G          &trans    &kp RALT   &trans  &kp TAB   &trans 
     &kp LCTRL  &kp X &kp C  &kp V &kp TAB        &trans    &trans     &trans  &trans    &trans 
-                     &trans &mo MC_S &kp SPACE   &trans    &to HRA    &trans
+                     &trans &mo MC_L &kp SPACE   &trans    &to HRA    &trans
                         >;
                 };
 
-                Minecraft_Secondary {
+                Minecraft_Lower {
                         bindings = <
    &kp N1   &kp N2    &kp N3   &kp N4    &kp N5        &trans   &trans   &trans  &trans   &trans 
    &kp N6   &kp N7    &kp N8   &kp N9    &kp F11       &trans   &trans   &trans  &trans   &trans 
    &trans   &trans    &trans   &trans    &trans        &trans   &trans   &trans  &trans   &trans 
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
+                        >;
+                };
+
+                Elden_Ring {
+                        bindings = <
+    &kp ESC    &kp Q    &kp W  &kp E    &kp R       &kp ESC  &trans     &trans  &trans   &trans 
+    &kp SPACE  &kp A    &kp S  &kp D    &kp LSHIFT  &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp RALT    &kp X   &kp G  &kp R    &kp TAB     &trans   &trans     &trans  &trans   &trans 
+                        &trans &mo ER_L &kp F       &trans   &to HRA     &trans
+                        >;
+                };
+
+               Elden_Ring_Lower {
+                        bindings = <
+   &trans   &trans    &kp UP    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
+   &trans   &kp LEFT  &kp DOWN  &kp RIGHT   &trans         &trans   &trans   &trans  &trans   &trans 
+   &trans   &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
+                      &trans    &trans      &kp SPACE      &trans   &trans   &trans
                         >;
                 };
         };
