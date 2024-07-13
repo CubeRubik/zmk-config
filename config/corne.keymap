@@ -20,6 +20,7 @@
 #define HRA_T   2
 #define Combo   3
 #define LOL     4
+#define LOL_S    5
 
 / {
         chosen {
@@ -58,7 +59,7 @@
                         >;
                 };
 
-                HRA_Secondary {
+                HRA_LOWER {
                         bindings = <
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
    &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
@@ -67,7 +68,7 @@
                         >;
                 };
 
-                HRA_Tertiary {
+                HRA_RAISE {
                         bindings = <
    &kp DE_EXCL  &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT   &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
    &kp DE_STAR  &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET   &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
@@ -87,10 +88,18 @@
 
                 LeagueOfLegends {
                         bindings = <
-    &kp TAB     &kp N1  &kp N2   &kp N3    &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W    &kp E     &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp B    &kp D     &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &mo 1     &kp SPACE      &trans   &to HRA   &trans  
+    &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
+    &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
+                        &kp RALT &mo LOL_S  &kp SPACE      &trans   &to HRA   &trans  
+                        >;
+                };
+                LeagueOfLegends_LOWER {
+                        bindings = <
+   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
+   &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
+   &trans       &trans       &trans       &trans       &trans           &trans   &kp DE_O_UMLAUT &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_SZ    
+                             &kp TAB      &trans       &kp SPACE        &kp RET  &trans          &kp BSPC
                         >;
                 };
         };
