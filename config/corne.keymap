@@ -88,7 +88,7 @@
                 COMBO {
                         bindings = <
    &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
-   &to HRA     &to LOL       &to CS       &to MC       &to ER           &to SUB    &to PKR    &trans      &trans     &trans
+   &to LOL     &to CS        &to MC       &to ER       &to SUB          &to PKR    &trans     &trans      &trans     &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
                         >;
@@ -99,7 +99,7 @@
     &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
     &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
     &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &trans     &kp SPACE      &trans   &to HRA   &trans  
+                        &kp RALT &trans     &kp SPACE      &trans   &to HRA    &trans  
                         >;
                 };
 
