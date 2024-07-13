@@ -42,6 +42,8 @@
         combo   {
             if-layers = <1 2>;
             then-layer = <3>;
+            if-layers = <1 4>;
+            then-layer = <1>;
                         };
                 };
         };
