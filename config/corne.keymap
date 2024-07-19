@@ -19,16 +19,17 @@
 #define HRA_L   1
 #define HRA_R   2
 #define Combo   3
-#define LOL     4
-#define CS      5
-#define MC      6
-#define MC_L    7
-#define ER      8
-#define ER_L    9
-#define SUB     10
-#define SUB_L   11
-#define SUB_R   12
-#define PKR     13
+#define Layers  4
+#define LOL     5
+#define CS      6
+#define MC      7
+#define MC_L    8
+#define ER      9
+#define ER_L    10
+#define SUB     11
+#define SUB_L   12
+#define SUB_R   13
+#define PKR     14
 
 / {
         chosen {
@@ -70,7 +71,7 @@
                 Home_Row_Adenvture_LOWER {
                         bindings = <
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
-   &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &kp DEL          &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
+   &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
    &trans       &trans       &trans       &trans       &trans           &trans   &kp DE_O_UMLAUT &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_SZ    
                              &kp TAB      &trans       &kp SPACE        &kp RET  &trans          &kp BSPC
                         >;
@@ -88,9 +89,18 @@
                 COMBO {
                         bindings = <
    &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
-   &to LOL     &to CS        &to MC       &to ER       &to SUB          &to PKR    &trans     &trans      &trans     &trans
+   &trans      &kp LALT      &trans       &to Layers   &trans           &trans     &trans     &kp LCTRL   &kp LALT   &kp DEL    
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
-                             &kp TAB      &trans       &kp SPACE        &kp RET    &trans     &kp BSPC
+                             &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA    &kp BSPC
+                        >;
+                };
+
+                Layers {
+                        bindings = <
+   &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans 
+   &to LOL     &to CS        &to MC       &to ER       &to SUB          &to PKR    &trans     &trans      &trans     &trans
+   &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &bt BT_CLR 
+                             &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA     &kp BSPC
                         >;
                 };
 
