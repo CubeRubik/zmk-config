@@ -71,10 +71,10 @@
 
                 Home_Row_Adenvture_LOWER {
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6   &kp N7          &kp N8           &kp N9           &kp N0 
-   &kp LSHIFT   &kp LALT     &kp LCTRL    &kp GUI      &trans           &trans   &kp LEFT        &kp DOWN         &kp UP           &kp RIGHT  
-   &trans       &trans       &trans       &trans       &trans           &trans   &kp DE_O_UMLAUT &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_SZ    
-                             &kp TAB      &trans       &kp SPACE        &kp RET  &trans          &kp BSPC
+   &kp N0       &kp N1    &kp N2    &kp N3    &trans           &kp K_UNDO  &kp K_COPY       &kp K_PASTE      &kp K_CUT        &kp K_REDO 
+   &trans       &kp N4    &kp N5    &kp N6    &trans           &kp PG_UP   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT  
+   &trans       &kp N7    &kp N8    &kp N9    &trans           &kp PG_DN   &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_SZ    
+                          &kp TAB   &trans    &kp SPACE        &kp HOME    &trans           &kp END
                         >;
                 };
 
