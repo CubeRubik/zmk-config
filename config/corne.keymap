@@ -209,7 +209,7 @@
                         bindings = <
     &kp ESC     &kp Q   &kp W   &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
     &kp LSHIFT  &kp A   &kp S   &kp D     &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp Y       &kp X   &kp C   &kp R     &kp TAB         &trans   &trans     &trans  &trans   &trans 
+    &kp Z       &kp X   &kp C   &kp R     &kp TAB         &trans   &trans     &trans  &trans   &trans 
                         &kp G   &mo NMS_L &kp SPACE       &trans   &to HRA    &trans
                         >;
                 };
