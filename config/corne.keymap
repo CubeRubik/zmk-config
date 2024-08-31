@@ -203,5 +203,21 @@
                        &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
+                NMS {
+                        bindings = <
+    &kp ESC     &kp Q   &kp W     &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
+    &kp LSHIFT  &kp A   &kp S     &kp D     &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp RALT    &kp X   &kp C     &kp R     &kp TAB         &trans   &trans     &trans  &trans   &trans 
+                        &mo SUB_R &mo SUB_L &kp SPACE       &trans   &to HRA    &trans
+                        >;
+                };
+
+                NMS_Lower {
+                        bindings = <
+   &kp N1     &kp N2    &kp N3    &kp N4      &kp N5         &trans   &trans   &trans  &trans   &trans 
+   &trans     &kp T     &kp K     &kp V   &trans         &trans   &trans   &trans  &trans   &trans 
+   &kp LCTRL  &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
+                        &trans    &trans      &kp SPACE      &trans   &trans   &trans
+
         };
 };
