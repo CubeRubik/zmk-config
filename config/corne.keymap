@@ -31,6 +31,8 @@
 #define SUB_R   13
 #define PKR     14
 #define WASD    15
+#define NMS     16
+#define NMS_L   17
 
 / {
         chosen {
@@ -99,7 +101,7 @@
                 Layers {
                         bindings = <
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to CS        &to MC       &to ER       &to SUB          &to PKR    &to WASD   &trans      &trans     &trans
+   &to LOL     &to CS        &to MC       &to ER       &to SUB          &to PKR    &to WASD   &to NMS      &trans     &trans
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA    &kp BSPC
                         >;
@@ -208,7 +210,7 @@
     &kp ESC     &kp Q   &kp W     &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
     &kp LSHIFT  &kp A   &kp S     &kp D     &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
     &kp RALT    &kp X   &kp C     &kp R     &kp TAB         &trans   &trans     &trans  &trans   &trans 
-                        &mo SUB_R &mo SUB_L &kp SPACE       &trans   &to HRA    &trans
+                        &mo NMS_L &mo NMS_L &kp SPACE       &trans   &to HRA    &trans
                         >;
                 };
 
