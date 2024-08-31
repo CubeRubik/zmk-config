@@ -199,7 +199,7 @@
                         bindings = <
     &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
     &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S   &kp D   &kp G       &trans  &trans    &trans  &trans   &trans
+    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
                        &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
