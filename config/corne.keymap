@@ -33,6 +33,8 @@
 #define WASD    15
 #define NMS     16
 #define NMS_L   17
+#define SUB   18
+#define SUB_L   19
 
 / {
         chosen {
@@ -101,7 +103,7 @@
                 Layers {
                         bindings = <
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to CS        &to MC       &to ER       &to WART         &to PKR    &to WASD   &to NMS      &trans     &trans
+   &to LOL     &to WASD      &to MC       &to SUB      &to WART         &to PKR    &to CS     &to NMS     &to ER     &trans
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA    &kp BSPC
                         >;
@@ -222,6 +224,23 @@
    &kp LCTRL  &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
                         &trans    &trans      &kp SPACE      &trans   &trans   &trans
                          >;
+                };
+                SUB {
+                        bindings = <
+    &kp N1     &kp N2  &kp N3  &kp N4      &kp N5      &kp ESC &trans    &trans  &trans   &trans    
+    &kp TAB    &kp Q   &kp W   &kp E       &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL  &kp A   &kp S   &kp D       &kp F       &trans  &trans    &trans  &trans   &trans
+                       &kp X   &mo SUB_L   &kp SPACE   &trans  &to HRA   &trans
+                        >;
+                };
+
+                SUB_Lower {
+                        bindings = <
+    &trans &trans  &kp E    &trans &trans      &trans  &trans   &trans    &trans   &trans    
+    &trans &trans  &trans   &kp F  &trans      &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT  
+    &trans &trans  &trans   &kp V  &trans      &kp N   &trans   &trans    &trans   &trans
+                   &trans   &trans &kp SPACE   &kp RET &to HRA  &trans
+                        >;
                 };
         };
 };
