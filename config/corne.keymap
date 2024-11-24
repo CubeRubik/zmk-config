@@ -261,5 +261,6 @@
    &kp TAB      &kp N7    &kp N8    &kp N9    &kp B            &trans  &trans   &trans    &trans   &trans    
                           &kp TAB   &trans    &kp SPACE        &trans  &trans   &trans    &trans   &trans  
                         >;
+                };
         };
 };
