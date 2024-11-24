@@ -247,9 +247,9 @@
                  
                 SPZ {
                         bindings = <
-    &kp LSHFT    &kp Q  &kp M     &kp R &kp T          &kp ESC   &trans     &trans  &trans    &trans 
-    &kp LCTRL    &kp A  &kp W     &kp E &kp G          &trans    &kp RALT   &trans  &kp TAB   &trans 
-    &kp X      &kp A  &kp S     &kp D &kp F          &trans    &trans     &trans  &trans    &trans 
+    &kp LSHFT    &kp Q   &kp M     &kp R &kp T          &kp ESC   &trans     &trans  &trans    &trans 
+    &kp LCTRL    &kp A   &kp W     &kp E &kp C          &trans    &kp RALT   &trans  &kp TAB   &trans 
+    &kp X        &kp A   &kp S     &kp D &kp  V         &trans    &trans     &trans  &trans    &trans 
                  &kp DEL &mo SPZ_L &kp SPACE            &trans    &to HRA    &trans
                         >;
                 };
