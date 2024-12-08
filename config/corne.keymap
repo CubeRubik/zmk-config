@@ -211,9 +211,9 @@
                 };
                 NMS {
                         bindings = <
-    &kp ESC     &kp Q   &kp W   &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
+    &kp TAB     &kp Q   &kp W   &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
     &kp LSHIFT  &kp A   &kp S   &kp D     &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp Z       &kp X   &kp C   &kp R     &kp TAB         &trans   &trans     &trans  &trans   &trans 
+    &kp LCTRL   &kp X   &kp C   &kp Z     &kp V         &trans   &trans     &trans  &trans   &trans 
                         &kp G   &mo NMS_L &kp SPACE       &trans   &to HRA    &trans
                         >;
                 };
@@ -221,10 +221,10 @@
 
                 NMS_Lower {
                         bindings = <
-   &kp N1     &kp N2    &kp N3    &kp N4      &kp N5         &trans   &trans   &trans  &trans   &trans 
-   &trans     &kp T     &kp K     &kp V   &trans         &trans   &trans   &trans  &trans   &trans 
-   &kp LCTRL  &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
-                        &trans    &trans      &kp SPACE      &trans   &trans   &trans
+   &kp N1     &kp F1    &kp F5    &kp F6  &kp N5         &trans   &trans   &trans  &trans   &trans 
+   &trans     &kp T     &kp K     &kp B   &kp H         &trans   &trans   &trans  &trans   &trans 
+   &kp LCTRL  &trans    &trans    &trans  &trans         &trans   &trans   &trans  &trans   &trans 
+                        &trans    &trans  &kp SPACE      &trans   &trans   &trans
                          >;
                 };
                 SUB {
