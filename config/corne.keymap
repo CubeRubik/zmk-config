@@ -20,23 +20,19 @@
 #define HRA_R   2
 #define Combo   3
 #define Layers  4
-#define G1      5
-#define G0      6
-#define G0_L    7
+#define G0      5
+#define G0_L    6
+#define G1      7
 #define LOL     8
 #define LOL_L   9
 #define CS      10
 #define ER      11
 #define ER_L    12
-#define WART    13
-#define WART_L  14
-#define WART_R  15
-#define MR      16
-#define MR_L    17
-#define SUB     18
-#define SUB_L   19
-#define SPZ     20
-#define SPZ_L   21
+#define MR      13
+#define MR_L    14
+#define SUB     15
+#define SPZ     16
+#define SPZ_L   17
 
 / {
         chosen {
@@ -88,7 +84,7 @@
                         bindings = <
    &kp DE_EXCL  &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT            &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
    &kp DE_STAR  &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET            &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
-   &kp DE_TILDE &trans       &kp DE_GRAVE  &kp DE_ACUTE &kp DE_At               &kp DE_UNDER  &kp DE_MINUS  &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
+   &kp DE_TILDE &trans       &kp DE_GRAVE  &kp DE_ACUTE &kp DE_AT               &kp DE_UNDER  &kp DE_MINUS  &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
                              &kp TAB       &trans       &kp SPACE               &kp RET       &trans        &kp BSPC
                         >;
                 };
@@ -105,18 +101,9 @@
                 Layers {
                         bindings = <
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to G1        &to G0       &to MR       &to WART         &to PKR    &to CS     &to MC     &to ER     &to SPZ
+   &to LOL     &to G0        &to G1       &to MR       &to CS           &to ER     &to SPZ    &trans      &trans     &trans
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA    &kp BSPC
-                        >;
-                };
-
-                Gaming 1 {
-                        bindings = <
-    &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
-    &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
-                       &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
 
@@ -135,6 +122,15 @@
    &trans   &kp N4    &kp N5   &kp N6    &kp F11       &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
+                        >;
+                };
+               
+                Gaming 1 {
+                        bindings = <
+    &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
+    &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
+                       &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
 
@@ -170,7 +166,7 @@
     &kp ESC    &kp Q    &kp W  &kp E    &kp R       &kp ESC  &trans     &trans  &trans   &trans 
     &kp SPACE  &kp A    &kp S  &kp D    &kp LSHIFT  &trans   &kp RALT   &trans  &kp TAB  &trans 
     &kp RALT    &kp X   &kp G  &kp R    &kp TAB     &trans   &trans     &trans  &trans   &trans 
-                        &trans &mo ER_L &kp F       &trans   &to HRA     &trans
+                        &trans &mo ER_L &kp F       &trans   &to HRA    &trans
                         >;
                 };
 
@@ -183,32 +179,6 @@
                         >;
                 };
 
-                War_Thunder {
-                        bindings = <
-    &kp I       &kp Q   &kp W      &kp E      &kp R           &kp ESC  &trans     &trans  &trans   &trans 
-    &kp LSHIFT  &kp A   &kp S      &kp D      &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp RALT    &kp X   &kp C      &kp V      &kp TAB         &trans   &trans     &trans  &trans   &trans 
-                        &mo WART_R &mo WART_L &kp SPACE       &trans   &to HRA    &trans
-                        >;
-                };
-
-                War_Thunder_Lower {
-                        bindings = <
-   &kp N0     &kp N1    &kp N2    &kp N3      &kp N4         &trans   &trans   &trans  &trans   &trans 
-   &trans     &trans    &kp H     &kp G       &trans         &trans   &trans   &trans  &trans   &trans 
-   &kp LCTRL  &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
-                        &trans    &trans      &kp SPACE      &trans   &trans   &trans
-                        >;
-                };
-
-                War_Thunder_Raise {
-                        bindings = <
-   &kp N6   &kp N7   &kp PG_UP   &kp N9    &kp F11      &trans   &trans   &trans  &trans   &trans
-   &trans   &trans   &kp PG_DN   &trans    &trans       &trans   &trans   &trans  &trans   &trans
-   &trans   &trans   &trans      &trans    &trans       &trans   &trans   &trans  &trans   &trans
-                     &trans      &trans    &kp SPACE    &trans   &trans   &trans
-                        >;
-                };
 
                 MR {
                         bindings = <
@@ -223,7 +193,7 @@
                 MR_Lower {
                         bindings = <
    &kp N1     &kp F1    &kp F5    &kp F6  &kp N5         &trans   &trans   &trans  &trans   &trans 
-   &trans     &kp T     &kp K     &kp B   &kp H         &trans   &trans   &trans  &trans   &trans 
+   &trans     &kp T     &kp K     &kp B   &kp H          &trans   &trans   &trans  &trans   &trans 
    &kp LCTRL  &trans    &trans    &trans  &trans         &trans   &trans   &trans  &trans   &trans 
                         &trans    &trans  &kp SPACE      &trans   &trans   &trans
                          >;
@@ -233,20 +203,12 @@
                         bindings = <
     &kp N1     &kp N2  &kp N3  &kp N4      &kp N5      &kp ESC &trans    &trans  &trans   &trans    
     &kp TAB    &kp Q   &kp W   &kp E       &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LSHIFT  &kp A   &kp S   &kp D       &kp F       &trans  &trans    &trans  &trans   &trans
+    &kp LSHIFT  &kp A  &kp S   &kp D       &kp F       &trans  &trans    &trans  &trans   &trans
                        &kp X   &mo SUB_L   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
 
-                SUB_Lower {
-                        bindings = <
-    &trans &trans  &kp E    &trans &trans      &trans  &trans   &trans    &trans   &trans    
-    &trans &trans  &trans   &kp F  &trans      &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT  
-    &trans &trans  &trans   &kp V  &trans      &kp N   &trans   &trans    &trans   &trans
-                   &trans   &trans &kp SPACE   &kp RET &to HRA  &trans
-                        >;
-                };
-                 
+
                 SPZ {
                         bindings = <
     &kp LSHFT    &kp Q   &kp M     &kp R &kp T          &kp ESC   &trans     &trans  &trans    &trans 
@@ -261,7 +223,7 @@
    &kp N0       &kp N1    &kp N2    &kp N3    &trans           &trans  &trans   &trans    &trans   &trans  
    &trans       &kp N4    &kp N5    &kp N6    &trans           &trans  &trans   &trans    &trans   &trans   
    &kp TAB      &kp N7    &kp N8    &kp N9    &kp B            &trans  &trans   &trans    &trans   &trans    
-                          &kp TAB   &trans    &kp SPACE        &trans  &trans   &trans    &trans   &trans  
+                          &kp TAB   &trans    &kp SPACE        &trans  &trans   &trans     
                         >;
                 };
         };
