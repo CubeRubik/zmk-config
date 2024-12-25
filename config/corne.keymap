@@ -20,25 +20,23 @@
 #define HRA_R   2
 #define Combo   3
 #define Layers  4
-#define WASD    5
-#define MC      6
-#define MC_L    7
-
+#define G1      5
+#define G0      6
+#define G0_L    7
 #define LOL     8
-#define CS      9
-#define ER      10
-#define ER_L    11
-#define WART     12
-#define WART_L   13
-#define WART_R   14
-#define PKR     15
-#define WASD    16
-#define MR     17
-#define MR_L   18
-#define SUB   19
-#define SUB_L   20
-#define SPZ   21
-#define SPZ_L 22
+#define LOL_L   9
+#define CS      10
+#define ER      11
+#define ER_L    12
+#define WART    13
+#define WART_L  14
+#define WART_R  15
+#define MR      16
+#define MR_L    17
+#define SUB     18
+#define SUB_L   19
+#define SPZ     20
+#define SPZ_L   21
 
 / {
         chosen {
@@ -88,10 +86,10 @@
 
                 Home_Row_Adenvture_RAISE {
                         bindings = <
-   &kp DE_EXCL  &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT   &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
-   &kp DE_STAR  &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET   &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
-   &kp DE_TILDE &trans       &kp DE_GRAVE  &kp DE_ACUTE &trans         &kp DE_UNDER  &kp DE_MINUS  &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
-                             &kp TAB       &trans       &kp SPACE      &kp RET       &trans        &kp BSPC
+   &kp DE_EXCL  &kp DE_DQT   &kp DE_SECT   &kp DLLR     &kp DE_PRCNT            &kp DE_AMPS   &kp DE_SLASH  &kp DE_LPAR &kp DE_RPAR   &kp DE_EQUAL 
+   &kp DE_STAR  &kp DE_HASH  &kp DE_LT     &kp DE_GT    &kp DE_CARET            &kp DE_SQT    &kp DE_PLUS   &kp DE_LBKT &kp DE_RBKT   &kp DE_BSLH 
+   &kp DE_TILDE &trans       &kp DE_GRAVE  &kp DE_ACUTE &kp DE_At               &kp DE_UNDER  &kp DE_MINUS  &kp DE_LBRC &kp DE_RBRC   &kp DE_PIPE 
+                             &kp TAB       &trans       &kp SPACE               &kp RET       &trans        &kp BSPC
                         >;
                 };
 
@@ -100,20 +98,20 @@
    &kp F1      &kp F2        &kp F3       &kp F4       &kp F5           &kp F6     &kp F7     &kp F8      &kp F9     &kp F11 
    &trans      &kp LALT      &trans       &trans       &to Layers       &trans     &trans     &kp LCTRL   &kp LALT   &kp DEL   
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans      &trans     &bt BT_CLR 
-                             &kp TAB      &trans       &trans       &kp RET    &to HRA    &kp BSPC
+                             &kp TAB      &trans       &trans           &kp RET    &to HRA    &kp BSPC
                         >;
                 };
 
                 Layers {
                         bindings = <
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to WASD      &to MC       &to MR      &to WART         &to PKR    &to CS     &to MC     &to ER     &to SPZ
+   &to LOL     &to G1        &to G0       &to MR       &to WART         &to PKR    &to CS     &to MC     &to ER     &to SPZ
    &trans      &trans        &trans       &trans       &trans           &trans     &trans     &trans      &trans     &bt BT_CLR 
                              &kp TAB      &trans       &kp SPACE        &kp RET    &to HRA    &kp BSPC
                         >;
                 };
 
-                WASD {
+                Gaming 1 {
                         bindings = <
     &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
     &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
@@ -122,19 +120,19 @@
                         >;
                 };
 
-                Minecraft {
+                Gaming 0 {
                         bindings = <
-    &kp ESC    &kp Q &kp W  &kp E &kp T          &kp ESC   &trans     &trans  &trans    &trans 
-    &kp LSHIFT &kp A &kp S  &kp D &kp G          &trans    &kp RALT   &trans  &kp TAB   &trans 
-    &kp LCTRL  &kp X &kp C  &kp V &kp TAB        &trans    &trans     &trans  &trans    &trans 
-                     &trans &mo MC_L &kp SPACE   &trans    &to HRA    &trans
+    &kp TAB    &kp Q &kp W  &kp E    &kp R          &kp ESC   &trans     &trans  &trans    &trans 
+    &kp LSHIFT &kp A &kp S  &kp D    &kp F          &trans    &kp RALT   &trans  &kp TAB   &trans 
+    &kp LCTRL  &kp X &kp C  &kp V    &kp G          &trans    &trans     &trans  &trans    &trans 
+                     &trans &mo G0_L &kp SPACE      &trans    &to HRA    &trans
                         >;
                 };
 
-                Minecraft_Lower {
+                Gaming 0_Lower {
                         bindings = <
-   &kp N0   &kp N1    &kp N2   &kp N3    &trans        &trans   &trans   &trans  &trans   &trans 
-   &kp F3   &kp N4    &kp N5   &kp N6    &kp F11       &trans   &trans   &trans  &trans   &trans 
+   &kp N0   &kp N1    &kp N2   &kp N3    &kp F3        &trans   &trans   &trans  &trans   &trans 
+   &trans   &kp N4    &kp N5   &kp N6    &kp F11       &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
                         >;
@@ -142,19 +140,28 @@
 
                 League_of_Legends {
                         bindings = <
-    &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &trans     &kp SPACE      &trans   &to HRA    &trans  
+    &kp TAB     &kp N1  &kp N2     &kp N3     &kp N4                 &kp ESC  &trans     &trans  &trans   &trans    
+    &kp LSHFT   &kp Q   &kp W      &kp E      &kp R                  &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp LCTRL   &kp A   &kp S      &kp D      &kp F                  &trans   &trans     &trans  &trans   &trans 
+                        &mo LOL_L  &kp B      &kp SPACE              &trans   &to HRA    &trans  
+                        >;
+                };
+                 
+                Lol_Lower {
+                        bindings = <
+   &trans      &kp F1      &kp F2       &kp F3       &kp F4             &kp ESC  &trans     &trans  &trans   &trans 
+   &trans      &kp V       &trans       &trans       &trans             &trans   &kp RALT   &trans  &kp TAB  &trans 
+   &trans      &trans      &trans       &trans       &trans             &trans   &trans     &trans  &trans   &trans 
+                           &kp TAB      &trans       &trans             &trans   &to HRA    &trans  
                         >;
                 };
 
                 Counterstrike {
                         bindings = <
-    &kp ESC   &kp N1  &kp N2       &kp N3  &kp N4      &kp ESC &trans    &kp F1  &kp F2   &trans    
-    &kp TAB   &kp B   &kp W        &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL &kp A   &kp S        &kp D   &kp G       &trans  &trans    &trans  &trans   &trans
-                      &kp DE_CARET &kp N5  &kp LSHFT   &trans  &to HRA   &trans
+    &kp N1      &kp N2  &kp N3         &kp N4  &kp N5     &kp ESC &trans    &kp F1  &kp F2   &trans    
+    &kp LSHFT   &kp Q   &kp W          &kp E   &kp R      &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL   &kp A   &kp S          &kp D   &kp G      &trans  &trans    &trans  &trans   &trans
+                        &kp DE_CARET   &kp B  &kp TAB     &trans  &to HRA   &trans
                         >;
                 };
 
@@ -187,7 +194,7 @@
 
                 War_Thunder_Lower {
                         bindings = <
-   &kp N0     &kp N1    &kp N2    &kp N3      &kp N4          &trans   &trans   &trans  &trans   &trans 
+   &kp N0     &kp N1    &kp N2    &kp N3      &kp N4         &trans   &trans   &trans  &trans   &trans 
    &trans     &trans    &kp H     &kp G       &trans         &trans   &trans   &trans  &trans   &trans 
    &kp LCTRL  &trans    &trans    &trans      &trans         &trans   &trans   &trans  &trans   &trans 
                         &trans    &trans      &kp SPACE      &trans   &trans   &trans
@@ -200,15 +207,6 @@
    &trans   &trans   &kp PG_DN   &trans    &trans       &trans   &trans   &trans  &trans   &trans
    &trans   &trans   &trans      &trans    &trans       &trans   &trans   &trans  &trans   &trans
                      &trans      &trans    &kp SPACE    &trans   &trans   &trans
-                        >;
-                };
-
-                Pokerogue {
-                        bindings = <
-    &trans &trans  &kp E    &trans &trans      &trans  &trans   &trans    &trans   &trans    
-    &trans &trans  &trans   &kp F  &trans      &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT  
-    &trans &trans  &trans   &kp V  &trans      &kp N   &trans   &trans    &trans   &trans
-                   &trans   &trans &kp SPACE   &kp RET &to HRA  &trans
                         >;
                 };
 
@@ -230,6 +228,7 @@
                         &trans    &trans  &kp SPACE      &trans   &trans   &trans
                          >;
                 };
+
                 SUB {
                         bindings = <
     &kp N1     &kp N2  &kp N3  &kp N4      &kp N5      &kp ESC &trans    &trans  &trans   &trans    
