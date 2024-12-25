@@ -20,23 +20,25 @@
 #define HRA_R   2
 #define Combo   3
 #define Layers  4
-#define LOL     5
-#define CS      6
-#define MC      7
-#define MC_L    8
-#define ER      9
-#define ER_L    10
-#define WART     11
-#define WART_L   12
-#define WART_R   13
-#define PKR     14
-#define WASD    15
-#define MR     16
-#define MR_L   17
-#define SUB   18
-#define SUB_L   19
-#define SPZ   20
-#define SPZ_L 21
+#define WASD    5
+#define MC      6
+#define MC_L    7
+
+#define LOL     8
+#define CS      9
+#define ER      10
+#define ER_L    11
+#define WART     12
+#define WART_L   13
+#define WART_R   14
+#define PKR     15
+#define WASD    16
+#define MR     17
+#define MR_L   18
+#define SUB   19
+#define SUB_L   20
+#define SPZ   21
+#define SPZ_L 22
 
 / {
         chosen {
@@ -111,21 +113,12 @@
                         >;
                 };
 
-                League_of_Legends {
+                WASD {
                         bindings = <
-    &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
-                        &kp RALT &trans     &kp SPACE      &trans   &to HRA    &trans  
-                        >;
-                };
-
-                Counterstrike {
-                        bindings = <
-    &kp ESC   &kp N1  &kp N2       &kp N3  &kp N4      &kp ESC &trans    &kp F1  &kp F2   &trans    
-    &kp TAB   &kp B   &kp W        &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL &kp A   &kp S        &kp D   &kp G       &trans  &trans    &trans  &trans   &trans
-                      &kp DE_CARET &kp N5  &kp LSHFT   &trans  &to HRA   &trans
+    &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
+    &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
+                       &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
 
@@ -144,6 +137,24 @@
    &kp F3   &kp N4    &kp N5   &kp N6    &kp F11       &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
+                        >;
+                };
+
+                League_of_Legends {
+                        bindings = <
+    &kp TAB     &kp N1  &kp N2   &kp N3     &kp N4         &kp ESC  &trans     &trans  &trans   &trans    
+    &kp LSHFT   &kp Q   &kp W    &kp E      &kp R          &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp LCTRL   &kp A   &kp B    &kp D      &kp F          &trans   &trans     &trans  &trans   &trans 
+                        &kp RALT &trans     &kp SPACE      &trans   &to HRA    &trans  
+                        >;
+                };
+
+                Counterstrike {
+                        bindings = <
+    &kp ESC   &kp N1  &kp N2       &kp N3  &kp N4      &kp ESC &trans    &kp F1  &kp F2   &trans    
+    &kp TAB   &kp B   &kp W        &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL &kp A   &kp S        &kp D   &kp G       &trans  &trans    &trans  &trans   &trans
+                      &kp DE_CARET &kp N5  &kp LSHFT   &trans  &to HRA   &trans
                         >;
                 };
 
@@ -198,15 +209,6 @@
     &trans &trans  &trans   &kp F  &trans      &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT  
     &trans &trans  &trans   &kp V  &trans      &kp N   &trans   &trans    &trans   &trans
                    &trans   &trans &kp SPACE   &kp RET &to HRA  &trans
-                        >;
-                };
-
-                WASD {
-                        bindings = <
-    &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
-    &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
-                       &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
 
