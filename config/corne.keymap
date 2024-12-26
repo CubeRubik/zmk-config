@@ -20,11 +20,11 @@
 #define HRA_R   2
 #define Combo   3
 #define Layers  4
-#define G0      5
-#define G0_L    6
-#define G1      7
-#define LOL     8
-#define LOL_L   9
+#define LOL     5
+#define LOL_L   6
+#define LOL_R   7
+#define G       8
+#define G_L     9
 #define CS      10
 #define ER      11
 #define ER_L    12
@@ -123,15 +123,66 @@
                 };
 
                 Layers {
+// -----------------------------------------------------------------------------------------
+// |     |        |    |            |            |      |        |   |   |   |   |   
+// | LOL | Gaming | CS | Elden Ring | Marvel Riv |      | SHAPEZ |   |   |   |   |
+// |     |        |    |            |            |      |        |   |   |   |   |
+//                |    |            |            |      |        |   |   |
+
                         bindings = <
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to G0        &to G1      &to MR       &to CS           &to ER     &to SPZ    &trans      &trans     &trans
+   &to LOL     &to G         &to CS      &to ER       &to MR           &to SPZ    &trans      &trans     &trans     &trans
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
                              &trans      &trans       &trans           &trans     &to HRA    &trans
                         >;
                 };
 
-                Gaming_Numberless {
+                League_of_Legends {
+// -----------------------------------------------------------------------------------------
+// |  TAB    |  1  |  2  |  3  |  4  |   | ESC |     |     |     |     |
+// |  SHFT   |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
+// |  CTRL   |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
+//                 | LWR | RSE | SPC |   |     | HRA |     |
+
+                        bindings = <
+    &kp TAB    &kp N1  &kp N2      &kp N3      &kp N4      &kp ESC &trans    &trans  &trans   &trans    
+    &kp LSHIFT &kp Q   &kp W       &kp E       &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL  &kp A   &kp S       &kp D       &kp F       &trans  &trans    &trans  &trans   &trans
+                       &mo LOL_L   &mo LOL_R   &kp SPACE   &trans  &to HRA   &trans
+                        >;
+                };
+                 
+                LOL_Lower {
+// -----------------------------------------------------------------------------------------
+// |        |  F1 |  F2 |  F3 |     |   |     |     |     |     |     |
+// |        |  F4 |  5  |  6  |     |   |     |     |     |     |     |     
+// |        |  7  |  8  |  9  |     |   |     |     |     |     |     |
+//                |     |     |     |   |     |     |     |
+
+                        bindings = <
+   &trans      &kp F1      &kp F2       &kp F3       &trans             &trans   &trans   &trans   &trans   &trans 
+   &trans      &kp F4      &kp N5       &kp N6       &trans              &trans   &trans   &trans   &trans   &trans 
+   &trans      &kp N7      &kp N8       &kp N9       &trans             &trans   &trans   &trans   &trans   &trans 
+                           &trans       &trans       &trans             &trans   &trans   &trans  
+                        >;
+                };
+
+                LOL_Raise {
+// -----------------------------------------------------------------------------------------
+// |     |     |     |     |     |   | ESC |     |     |     |     |
+// |     |     |     |     |  G  |   |     | ALT |     | TAB |     |     
+// |  Z  |  X  |  C  |  V  |  B  |   |     |     |     |     |     |
+//             |     |     |     |   |     | HRA |     |
+
+                        bindings = <
+    &trans   &trans  &trans     &trans   &trans                 &kp ESC  &trans     &trans  &trans   &trans    
+    &trans   &trans  &trans     &trans   &kp G                  &trans   &kp RALT   &trans  &kp TAB  &trans 
+    &kp Z    &kp X   &kp C      &kp V    &kp B                  &trans   &trans     &trans  &trans   &trans
+                     &trans     &trans   &trans                 &trans   &to HRA    &trans  
+                        >;
+                };
+
+                Gaming {
 // -----------------------------------------------------------------------------------------
 // |  TAB    |  Q  |  W  |  E  |  R  |   | ESC |     |     |     |     |
 // |  SHFT   |  A  |  S  |  D  |  F  |   |     | ALT |     | TAB |     |
@@ -142,11 +193,11 @@
     &kp TAB    &kp Q &kp W  &kp E    &kp R          &kp ESC   &trans     &trans  &trans    &trans 
     &kp LSHIFT &kp A &kp S  &kp D    &kp F          &trans    &kp RALT   &trans  &kp TAB   &trans 
     &kp LCTRL  &kp X &kp C  &kp V    &kp G          &trans    &trans     &trans  &trans    &trans 
-                     &kp B  &mo G0_L &kp SPACE      &trans    &to HRA    &trans
+                     &kp B  &mo G_L &kp SPACE      &trans    &to HRA    &trans
                         >;
                 };
 
-                Gaming_Numberless_Lower {
+                Gaming_Lower {
 // -----------------------------------------------------------------------------------------
 // |  0  |  1  |  2  |  3  |  F3  |   |     |      |     |     |     |
 // |     |  4  |  5  |  6  |  F11 |   |     |      |     |     |     |
@@ -160,52 +211,6 @@
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
                         >;
                 };
-               
-                Gaming_Numberful {
-// -----------------------------------------------------------------------------------------
-// |  TAB    |  1  |  2  |  3  |  4  |   | ESC |     |     |     |     |
-// |  SHFT   |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
-// |  CTRL   |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
-//                 |  X  |  C  | SPC |   |     | HRA |     |
-
-                        bindings = <
-    &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4      &kp ESC &trans    &trans  &trans   &trans    
-    &kp LSHIFT &kp Q   &kp W   &kp E   &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S   &kp D   &kp F       &trans  &trans    &trans  &trans   &trans
-                       &kp X   &kp C   &kp SPACE   &trans  &to HRA   &trans
-                        >;
-                };
-
-                League_of_Legends {
-// -----------------------------------------------------------------------------------------
-// |  TAB   |  1  |  2  |  3  |  4  |   | ESC |     |     |     |     |
-// |  SHFT  |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
-// |  CTRL  |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
-//                | LWR |  B  | SPC |   |     | HRA |     |
-
-                        bindings = <
-    &kp TAB     &kp N1  &kp N2     &kp N3   &kp N4                 &kp ESC  &trans     &trans  &trans   &trans    
-    &kp LSHFT   &kp Q   &kp W      &kp E    &kp R                  &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp A   &kp S      &kp D    &kp F                  &trans   &trans     &trans  &trans   &trans 
-                        &mo LOL_L  &kp B    &kp SPACE              &trans   &to HRA    &trans  
-                        >;
-                };
-                 
-                Lol_Lower {
-// -----------------------------------------------------------------------------------------
-// |        |  F1 |  F2 |  F3 |  F4 |   |     |     |     |     |     |
-// |        |  V  |     |     |     |   |     |     |     |     |     |     
-// |        |     |     |     |     |   |     |     |     |     |     |
-//                |     |     |     |   |     |     |     |
-
-                        bindings = <
-   &trans      &kp F1      &kp F2       &kp F3       &kp F4             &trans   &trans   &trans   &trans   &trans 
-   &trans      &kp V       &trans       &trans       &trans             &trans   &trans   &trans   &trans   &trans 
-   &trans      &trans      &trans       &trans       &trans             &trans   &trans   &trans   &trans   &trans 
-                           &trans       &trans       &trans             &trans   &trans   &trans  
-                        >;
-                };
-
                 Counterstrike {
 // -----------------------------------------------------------------------------------------
 // |  1     |  2  |  3  |  4  |  5  |   | ESC |     |  F1 | F2  |     |
@@ -283,20 +288,6 @@
                          >;
                 };
 
-                SUB {
-// -----------------------------------------------------------------------------------------
-// |  1    |  2  |  3  |  4  |  5  |   | ESC |     |     |     |     |
-// |  TAB  |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
-// |  SHFT |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
-//               |  X  |     | SPC |   |     | HRA |     |
-
-                        bindings = <
-    &kp N1     &kp N2  &kp N3  &kp N4   &kp N5      &kp ESC &trans    &trans  &trans   &trans    
-    &kp TAB    &kp Q   &kp W   &kp E    &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LSHIFT  &kp A  &kp S   &kp D    &kp F       &trans  &trans    &trans  &trans   &trans
-                       &kp X   &trans   &kp SPACE   &trans  &to HRA   &trans
-                        >;
-                };
 
                 SPZ {
 // -----------------------------------------------------------------------------------------
