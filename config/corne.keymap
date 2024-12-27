@@ -82,13 +82,13 @@
 // |  0  |  1  |  2  |  3  |    |    |  UNDO  | COPY  | PASTE  |  CUT  |  REDO  |
 // |     |  4  |  5  |  6  |    |    |  PG UP |  <-   |  UP    |  DOWN |   ->   |
 // |     |  7  |  8  |  9  |    |    |  PG DN |   Ö   |   Ü    |   Ä   |    ß   |
-//             |     |     |    |    |  HOME  |  DEL  |  END   |
+//             |     |     |    |    |  HOME  |       |  END   |
 
                         bindings = <
-   &kp N0       &kp N1    &kp N2    &kp N3    &trans           &kp C_AC_UNDO  &kp C_AC_COPY       &kp C_AC_PASTE      &kp C_AC_CUT        &kp C_AC_REDO 
+   &kp N0       &kp N1    &kp N2    &kp N3    &trans           &kp RC(Z)      &kp RC(C)           &kp RC(V)           &kp RC(X)           &kp RC(Z) 
    &trans       &kp N4    &kp N5    &kp N6    &trans           &kp PG_UP      &kp LEFT            &kp DOWN            &kp UP              &kp RIGHT  
    &trans       &kp N7    &kp N8    &kp N9    &trans           &kp PG_DN      &kp DE_O_UMLAUT     &kp DE_U_UMLAUT     &kp DE_A_UMLAUT     &kp DE_SZ    
-                          &trans   &trans     &trans           &kp HOME       &trans              &kp END
+                          &trans   &trans     &trans           &kp HOME       &kp LC(RIGHT)       &kp END
                         >;
                 };
 
