@@ -23,8 +23,8 @@
 #define LOL     5
 #define LOL_L   6
 #define LOL_R   7
-#define G       8
-#define G_L     9
+#define GM      8
+#define GM_L    9
 #define CS      10
 #define ER      11
 #define ER_L    12
@@ -131,7 +131,7 @@
 
                         bindings = <
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to G         &to CS      &to ER       &to MR           &to SPZ    &trans      &trans     &trans     &trans
+   &to LOL     &to GM        &to CS      &to ER       &to MR           &to SPZ    &trans      &trans     &trans     &trans
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
                              &trans      &trans       &trans           &trans     &to HRA    &trans
                         >;
@@ -190,10 +190,10 @@
 //                 |  B  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp TAB    &kp Q &kp W  &kp E    &kp R          &kp ESC   &trans     &trans  &trans    &trans 
-    &kp LSHIFT &kp A &kp S  &kp D    &kp F          &trans    &kp RALT   &trans  &kp TAB   &trans 
-    &kp LCTRL  &kp X &kp C  &kp V    &kp G          &trans    &trans     &trans  &trans    &trans 
-                     &kp B  &mo G_L &kp SPACE      &trans    &to HRA    &trans
+    &kp TAB    &kp Q &kp W  &kp E     &kp R          &kp ESC   &trans     &trans  &trans    &trans 
+    &kp LSHIFT &kp A &kp S  &kp D     &kp F          &trans    &kp RALT   &trans  &kp TAB   &trans 
+    &kp LCTRL  &kp X &kp C  &kp V     &kp G          &trans    &trans     &trans  &trans    &trans 
+                     &kp B  &mo GM_L  &kp SPACE      &trans    &to HRA    &trans
                         >;
                 };
 
