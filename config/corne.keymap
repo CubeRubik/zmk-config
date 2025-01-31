@@ -79,14 +79,14 @@
 
                 Home_Row_Adenvture_LOWER {
 // -----------------------------------------------------------------------------------------
-// |  0  |  1  |  2  |  3  |    |    |  UNDO  | COPY  | PASTE  |  CUT  |  REDO  |
-// |     |  4  |  5  |  6  |    |    |  PG UP |  <-   |  UP    |  DOWN |   ->   |
-// |     |  7  |  8  |  9  |    |    |  PG DN |   Ö   |   Ü    |   Ä   |    ß   |
-//             |     |     |    |    |  HOME  |       |  END   |
+// |  0   |  1  |  2  |  3  |    |    |  UNDO  | COPY  | PASTE  |  CUT  |  REDO  |
+// | CAPS |  4  |  5  |  6  |    |    |  PG UP |  <-   |  UP    |  DOWN |   ->   |
+// |      |  7  |  8  |  9  |    |    |  PG DN |   Ö   |   Ü    |   Ä   |    ß   |
+//              |     |     |    |    |  HOME  |       |  END   |
 
                         bindings = <
    &kp N0       &kp N1    &kp N2    &kp N3    &trans           &kp RC(Z)      &kp RC(C)           &kp RC(V)           &kp RC(X)           &kp RC(Z) 
-   &trans       &kp N4    &kp N5    &kp N6    &trans           &kp PG_UP      &kp LEFT            &kp DOWN            &kp UP              &kp RIGHT  
+   &kp CAPS     &kp N4    &kp N5    &kp N6    &trans           &kp PG_UP      &kp LEFT            &kp DOWN            &kp UP              &kp RIGHT  
    &trans       &kp N7    &kp N8    &kp N9    &trans           &kp PG_DN      &kp DE_O_UMLAUT     &kp DE_U_UMLAUT     &kp DE_A_UMLAUT     &kp DE_SZ    
                           &trans   &trans     &trans           &kp HOME       &trans       &kp END
                         >;
@@ -139,15 +139,15 @@
 
                 League_of_Legends {
 // -----------------------------------------------------------------------------------------
-// |  TAB    |  1  |  2  |  3  |  4  |   | ESC |     |     |     |     |
-// |  SHFT   |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
-// |  CTRL   |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
-//                 | LWR | RSE | SPC |   |     | HRA |     |
+// |  TAB    |  1  |  2  |  3  |  4  |   | ESC     |        |        |     |     |
+// |  SHFT   |  Q  |  W  |  E  |  R  |   |         | ALT    |        | TAB |     |     
+// |  CTRL   |  A  |  S  |  D  |  F  |   |  MUTE   | VOL UP | VOL DN |     |     |
+//                 | LWR | RSE | SPC |   |         | HRA    |        |
 
                         bindings = <
     &kp TAB    &kp N1  &kp N2      &kp N3      &kp N4      &kp ESC &trans    &trans  &trans   &trans    
     &kp LSHIFT &kp Q   &kp W       &kp E       &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S       &kp D       &kp F       &trans  &trans    &trans  &trans   &trans
+    &kp LCTRL  &kp A   &kp S       &kp D       &kp F       &c MUTE  &c VOL UP    &c VOL DN  &trans   &trans
                        &mo LOL_L   &mo LOL_R   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
@@ -161,7 +161,7 @@
 
                         bindings = <
    &trans      &kp F1      &kp F2       &kp F3       &trans             &trans   &trans   &trans   &trans   &trans 
-   &trans      &kp F4      &kp N5       &kp N6       &trans              &trans   &trans   &trans   &trans   &trans 
+   &trans      &kp F4      &kp N5       &kp N6       &trans             &trans   &trans   &trans   &trans   &trans 
    &trans      &kp N7      &kp N8       &kp N9       &trans             &trans   &trans   &trans   &trans   &trans 
                            &trans       &trans       &trans             &trans   &trans   &trans  
                         >;
@@ -177,7 +177,7 @@
                         bindings = <
     &trans   &trans  &trans     &trans   &trans                 &kp ESC  &trans     &trans  &trans   &trans    
     &trans   &trans  &trans     &trans   &kp G                  &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp Z    &kp X   &kp C      &kp V    &kp B                  &trans   &trans     &trans  &trans   &trans
+    &kp Y    &kp X   &kp C      &kp V    &kp B                  &trans   &trans     &trans  &trans   &trans
                      &trans     &trans   &trans                 &trans   &to HRA    &trans  
                         >;
                 };
