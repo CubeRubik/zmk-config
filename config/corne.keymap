@@ -147,7 +147,7 @@
                         bindings = <
     &kp TAB    &kp N1  &kp N2      &kp N3      &kp N4      &kp ESC &trans    &trans  &trans   &trans    
     &kp LSHIFT &kp Q   &kp W       &kp E       &kp R       &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL  &kp A   &kp S       &kp D       &kp F       &kp C_MUTE  &kp C_VOL UP    &kp C_VOL DN  &trans   &trans
+    &kp LCTRL  &kp A   &kp S       &kp D       &kp F       &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
                        &mo LOL_L   &mo LOL_R   &kp SPACE   &trans  &to HRA   &trans
                         >;
                 };
