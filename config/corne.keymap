@@ -190,10 +190,10 @@
 //                 |  B  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp TAB    &kp Q &kp W  &kp E     &kp R          &kp ESC   &trans     &trans  &trans    &trans 
-    &kp LSHIFT &kp A &kp S  &kp D     &kp F          &trans    &kp RALT   &trans  &kp TAB   &trans 
-    &kp LCTRL  &kp X &kp C  &kp V     &kp G          &trans    &trans     &trans  &trans    &trans 
-                     &kp B  &mo GM_L  &kp SPACE      &trans    &to HRA    &trans
+    &kp TAB    &kp Q &kp W  &kp E     &kp R          &kp ESC     &trans          &trans        &trans    &trans 
+    &kp LSHIFT &kp A &kp S  &kp D     &kp F          &trans      &kp RALT        &trans        &kp TAB   &trans 
+    &kp LCTRL  &kp X &kp C  &kp V     &kp G          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
+                     &kp B  &mo GM_L  &kp SPACE      &trans      &to HRA         &trans
                         >;
                 };
 
@@ -213,16 +213,16 @@
                 };
                 Counterstrike {
 // -----------------------------------------------------------------------------------------
-// |  1     |  2  |  3  |  4  |  5  |   | ESC |     |  F1 | F2  |     |
-// |  SHFT  |  Q  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |     
-// |  CTRL  |  A  |  S  |  D  |  G  |   |     |     |     |     |     |
-//                | LWR |  B  | TAB |   |     | HRA |     |
+// |  TAB   |  1  |  2  |  3  |  4    |   | ESC |     |  F1 | F2  |     |
+// |   G    |  Q  |  W  |  E  |  R    |   |     | ALT |     | TAB |     |     
+// |  CTRL  |  A  |  S  |  D  |  5    |   |     |     |     |     |     |
+//                |Audio|  B  |  SHFT |   |     | HRA |     |
 
                         bindings = <
-    &kp N1      &kp N2  &kp N3         &kp N4  &kp N5     &kp ESC &trans    &kp F1  &kp F2   &trans    
-    &kp LSHFT   &kp Q   &kp W          &kp E   &kp R      &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL   &kp A   &kp S          &kp D   &kp G      &trans  &trans    &trans  &trans   &trans
-                        &kp DE_CARET   &kp B   &kp TAB    &trans  &to HRA   &trans
+    &kp TAB     &kp N1  &kp N2         &kp N3  &kp N4     &kp ESC &trans    &kp F1  &kp F2   &trans    
+    &kp G       &kp Q   &kp W          &kp E   &kp R      &trans  &kp RALT  &trans  &kp TAB  &trans
+    &kp LCTRL   &kp A   &kp S          &kp D   &kp N5     &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans   &trans
+                        &kp DE_CARET   &kp B   &kp LSHFT  &trans  &to HRA   &trans
                         >;
                 };
 
@@ -234,10 +234,10 @@
 //                 |     | LWR | TAB |   |     | HRA |     |
 
                         bindings = <
-    &kp ESC    &kp Q    &kp W  &kp E    &kp R       &kp ESC  &trans     &trans  &trans   &trans 
-    &kp SPACE  &kp A    &kp S  &kp D    &kp LSHIFT  &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp RALT   &kp X    &kp C  &kp F    &kp G       &trans   &trans     &trans  &trans   &trans 
-                        &trans &mo ER_L &kp TAB     &trans   &to HRA    &trans
+    &kp ESC    &kp Q    &kp W  &kp E    &kp R       &kp ESC     &trans          &trans        &trans   &trans 
+    &kp SPACE  &kp A    &kp S  &kp D    &kp LSHIFT  &trans      &kp RALT        &trans        &kp TAB  &trans 
+    &kp RALT   &kp X    &kp C  &kp F    &kp G       &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
+                        &trans &mo ER_L &kp TAB     &trans      &to HRA          &trans
                         >;
                 };
 
@@ -265,10 +265,10 @@
 //                 |  G  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp TAB     &kp Q   &kp W   &kp E     &kp R           &kp ESC  &trans     &trans  &trans   &trans 
-    &kp LSHIFT  &kp A   &kp S   &kp D     &kp F           &trans   &kp RALT   &trans  &kp TAB  &trans 
-    &kp LCTRL   &kp X   &kp C   &kp Y     &kp V           &trans   &trans     &trans  &trans   &trans 
-                        &kp G   &mo MR_L  &kp SPACE       &trans   &to HRA    &trans
+    &kp TAB     &kp Q   &kp W   &kp E     &kp R           &kp ESC     &trans          &trans        &trans   &trans 
+    &kp LSHIFT  &kp A   &kp S   &kp D     &kp F           &trans      &kp RALT        &trans        &kp TAB  &trans 
+    &kp LCTRL   &kp X   &kp C   &kp Y     &kp V           &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
+                        &kp G   &mo MR_L  &kp SPACE       &trans      &to HRA         &trans
                         >;
                 };
 
