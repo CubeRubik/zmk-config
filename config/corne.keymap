@@ -45,10 +45,10 @@
 //                |Audio|  B  |  SHFT |   |      |  HRA   |        |
 
                         bindings = <
-    &kp TAB     &kp N1  &kp N2         &kp N3  &kp N4     &kp ESC &trans    &kp F1  &kp F2   &trans    
-    &kp G       &kp Q   &kp W          &kp E   &kp R      &trans  &kp RALT  &trans  &kp TAB  &trans
-    &kp LCTRL   &kp A   &kp S          &kp D   &kp N5     &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans   &trans
-                        &kp CARET      &kp B   &kp LSHFT  &trans  &to HRA   &trans
+    &kp TAB     &kp N1  &kp N2     &kp N3  &kp N4       &kp ESC     &trans        &kp F1  &kp F2   &trans    
+    &kp G       &kp Q   &kp W      &kp E   &kp R        &trans      &kp RALT      &trans        &kp TAB  &trans
+    &kp LCTRL   &kp A   &kp S      &kp D   &kp N5       &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans   &trans
+                        &kp CARET  &kp B   &kp LSHFT    &trans      &trans        &trans
                         >;
                 };
         };
