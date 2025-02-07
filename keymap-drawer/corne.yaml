@@ -1,0 +1,39 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x5_3}
+layers:
+  Counterstrike:
+  - TAB
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - ESC
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - {t: ▽, type: trans}
+  - G
+  - Q
+  - W
+  - E
+  - R
+  - {t: ▽, type: trans}
+  - RALT
+  - {t: ▽, type: trans}
+  - TAB
+  - {t: ▽, type: trans}
+  - LCTRL
+  - A
+  - S
+  - D
+  - '5'
+  - MUTE
+  - VOL UP
+  - VOL DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ^
+  - B
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
