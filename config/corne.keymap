@@ -10,9 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Home row mods
-#define HRML(k1,k2,k3,k4) &ht LEFT_GUI k1 &ht LALT k2 &ht LCTRL k3 &ht LSHIFT k4
-#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1 &ht LCTRL k2 &ht RALT k3 &ht LEFT_GUI k4
 
 // Layers
 #define HRA     0
@@ -70,10 +67,10 @@
 //             | TAB | LWR | SPC |   | ENT | RSE  | BSP |
                        
                         bindings = <
-    &kp Q    &kp W    &kp E     &kp R &kp T       &kp Y   &kp U   &kp I        &kp O      &kp P    
-    HRML(A,  S,       D,        F)    &kp G       &kp H   HRMR(J, K,           L,         ESC)    
-    &kp Z    &kp X    &kp C     &kp V &kp B       &kp N   &kp M   &kp DE_COMMA &kp DE_DOT &kp DE_QMARK 
-                      &kp TAB   &mo 1 &kp SPACE   &kp RET &mo 2   &kp BSPC
+    &kp Q           &kp W   &kp E   &kp R  &kp T          &kp Y   &kp U   &kp I        &kp O      &kp P    
+    &ht_hp LGUI A   &kp S   &kp D   &kp F  &kp G          &kp H   &kp J   &kp K        &kp L      &ht_hp LGUI ESC
+    &kp Z           &kp X   &kp C   &kp V  &kp B          &kp N   &kp M   &kp DE_COMMA &kp DE_DOT &kp DE_QMARK 
+             &ht_hp LALT TAB &mo 1  &ht_hp LSHFT SPACE    &ht_hp LCTRL RET &mo 2   &ht_hp RALT BSPC
                         >;
                 };
 
