@@ -67,10 +67,10 @@
 //             | TAB | LWR | SPC |   | ENT | RSE  | BSP |
                        
                         bindings = <
-    &kp Q           &kp W   &kp E   &kp R  &kp T          &kp Y   &kp U   &kp I        &kp O      &kp P    
-    &ht_hp LGUI A   &kp S   &kp D   &kp F  &kp G          &kp H   &kp J   &kp K        &kp L      &ht_hp LGUI ESC
-    &kp Z           &kp X   &kp C   &kp V  &kp B          &kp N   &kp M   &kp DE_COMMA &kp DE_DOT &kp DE_QMARK 
-             &ht_hp LALT TAB &mo 1  &ht_hp LSHFT SPACE    &ht_hp LCTRL RET &mo 2   &ht_hp RALT BSPC
+    &kp Q       &kp W    &kp E      &kp R  &kp T       &kp Y         &kp U  &kp I        &kp O      &kp P    
+    &ht LGUI A  &kp S    &kp D      &kp F  &kp G       &kp H         &kp J  &kp K        &kp L      &ht LGUI ESC
+    &kp Z       &kp X    &kp C      &kp V  &kp B       &kp N         &kp M  &kp DE_COMMA &kp DE_DOT &kp DE_QMARK 
+                &ht LALT TAB &mo 1  &ht LSHFT SPACE    &ht LCTRL RET &mo 2  &ht RALT BSPC
                         >;
                 };
 
