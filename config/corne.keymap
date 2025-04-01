@@ -20,11 +20,9 @@
 #define LOL     5
 #define LOL_L   6
 #define LOL_R   7
-#define ARK     8
-#define ARK_L   9
-#define CS      10
-#define GM      11
-#define GM_L    12
+#define CS      8
+#define GM      9
+#define GM_L    10
 
 / {
         chosen {
@@ -123,7 +121,7 @@
 
                         bindings = <
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to GM        &to CS      &to ARK      &trans           &trans    &trans      &trans     &trans     &trans
+   &to LOL     &to GM        &to CS      &trans       &trans           &trans     &trans      &trans     &trans     &trans
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
                              &trans      &trans       &trans           &trans     &to HRA    &trans
                         >;
@@ -174,36 +172,6 @@
                         >;
                 };
 
-                ARK {
-// -----------------------------------------------------------------------------------------
-// |  V      |  O  |  I  |  G  |  T  |   | ESC |     |     |     |     |
-// |  SHFT   |  W  |  W  |  E  |  R  |   |     | ALT |     | TAB |     |
-// |  CTRL   |  A  |  S  |  D  |  F  |   |     |     |     |     |     |
-//                 |  B  | LWR | SPC |   |     | HRA |     |
-
-                        bindings = <
-    &kp V      &kp O &kp I  &kp G      &kp T          &kp ESC     &trans          &trans        &trans    &trans 
-    &kp LSHIFT &kp Q &kp W  &kp E      &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
-    &kp LCTRL  &kp A &kp S  &kp D      &kp F          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
-                     &kp B  &mo ARK_L  &kp SPACE      &trans      &to HRA         &trans
-                        >;
-                };
-
-                ARK_Lower {
-// -----------------------------------------------------------------------------------------
-// |  0  |  1  |  2  |  3  |  G   |   |     |      |     |     |     |
-// |     |  4  |  5  |  6  |  M   |   |     |      |     |     |     |
-// |     |  7  |  8  |  9  |      |   |     |      |     |     |     |
-//             | GUI | LWR |  SPC |   |     |      |     |
-
-                        bindings = <
-   &kp N0   &kp N1    &kp N2   &kp N3    &kp G         &trans   &trans   &trans  &trans   &trans 
-   &trans   &kp N4    &kp N5   &kp N6    &kp M         &trans   &trans   &trans  &trans   &trans 
-   &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
-                      &trans   &trans    &kp SPACE     &trans   &to HRA  &trans
-                        >;
-                };
-
                 Counterstrike {
 // -----------------------------------------------------------------------------------------
 // |  TAB   |  1  |  2  |  3  |  4    |   | ESC |     |  F1 | F2  |     |
@@ -227,23 +195,23 @@
 //                 |  B  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp TAB    &kp Q &kp W  &kp E     &kp R          &kp ESC     &trans          &trans        &trans    &trans 
-    &kp LSHIFT &kp A &kp S  &kp D     &kp F          &trans      &kp RALT        &trans        &kp TAB   &trans 
-    &kp LCTRL  &kp X &kp C  &kp V     &kp G          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
+    &kp V      &kp O &kp I  &kp G     &kp T          &kp ESC     &trans          &trans        &trans    &trans 
+    &kp LSHIFT &kp W &kp W  &kp E     &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
+    &kp LCTRL  &kp A &kp S  &kp D     &kp F          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
                      &kp B  &mo GM_L  &kp SPACE      &trans      &to HRA         &trans
                         >;
                 };
 
                 Gaming_Lower {
 // -----------------------------------------------------------------------------------------
-// |  0  |  1  |  2  |  3  |  F3  |   |     |      |     |     |     |
-// |     |  4  |  5  |  6  |  F11 |   |     |      |     |     |     |
+// |  0  |  1  |  2  |  3  |      |   |     |      |     |     |     |
+// |     |  4  |  5  |  6  |      |   |     |      |     |     |     |
 // |     |  7  |  8  |  9  |      |   |     |      |     |     |     |
-//             | GUI | LWR |  SPC |   |     |      |     |
+//             |     |     |  SPC |   |     |      |     |
 
                         bindings = <
-   &kp N0   &kp N1    &kp N2   &kp N3    &kp F3        &trans   &trans   &trans  &trans   &trans 
-   &trans   &kp N4    &kp N5   &kp N6    &kp F11       &trans   &trans   &trans  &trans   &trans 
+   &kp N0   &kp N1    &kp N2   &kp N3    &trans        &trans   &trans   &trans  &trans   &trans 
+   &trans   &kp N4    &kp N5   &kp N6    &trans        &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
                       &trans   &trans    &kp SPACE     &trans   &trans   &trans
                         >;
