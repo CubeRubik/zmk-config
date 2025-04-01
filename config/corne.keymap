@@ -195,8 +195,8 @@
 //                 |  B  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp V      &kp O &kp I  &kp G     &kp T          &kp ESC     &trans          &trans        &trans    &trans 
-    &kp LSHIFT &kp W &kp W  &kp E     &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
+    &kp ESC    &kp O &kp I  &kp G     &kp T          &kp ESC     &trans          &trans        &trans    &trans 
+    &kp LSHIFT &kp Q &kp W  &kp E     &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
     &kp LCTRL  &kp A &kp S  &kp D     &kp F          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
                      &kp B  &mo GM_L  &kp SPACE      &trans      &to HRA         &trans
                         >;
