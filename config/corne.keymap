@@ -23,7 +23,7 @@
 #define GM      8
 #define GM_L    9
 #define CS      10
-#define ARK     11
+#define BRA     11
 #define ARK_L   12
 
 / {
@@ -123,7 +123,7 @@
 
                         bindings = <
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
-   &to LOL     &to GM        &to CS      &to ER       &to ARK           &to SPZ    &trans      &trans     &trans     &trans
+   &to LOL     &to GM        &to CS      &to BRA      &trans           &trans    &trans      &trans     &trans     &trans
    &trans      &trans        &trans      &trans       &trans           &trans     &trans     &trans      &trans     &trans 
                              &trans      &trans       &trans           &trans     &to HRA    &trans
                         >;
@@ -244,7 +244,7 @@
    &kp N0   &kp N1    &kp N2   &kp N3    &kp G         &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N4    &kp N5   &kp N6    &kp M         &trans   &trans   &trans  &trans   &trans 
    &trans   &kp N7    &kp N8   &kp N9    &trans        &trans   &trans   &trans  &trans   &trans 
-                      &trans   &trans    &kp SPACE     &trans      &to HRA         &trans
+                      &trans   &trans    &kp SPACE     &trans   &to HRA  &trans
                         >;
                 };
         };
