@@ -31,7 +31,7 @@
 #define SPZ     16
 #define SPZ_L   17
 #define ARK     18
-#define Ark_L   19
+#define ARK_L   19
 
 / {
         chosen {
@@ -325,9 +325,9 @@
 //                 |  B  | LWR | SPC |   |     | HRA |     |
 
                         bindings = <
-    &kp V    &kp O &kp I  &kp G     &kp T          &kp ESC     &trans          &trans        &trans    &trans 
-    &kp LSHIFT &kp Q &kp W  &kp E     &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
-    &kp LCTRL  &kp A &kp S  &kp D     &kp F          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
+    &kp V      &kp O &kp I  &kp G      &kp T          &kp ESC     &trans          &trans        &trans    &trans 
+    &kp LSHIFT &kp Q &kp W  &kp E      &kp R          &trans      &kp RALT        &trans        &kp TAB   &trans 
+    &kp LCTRL  &kp A &kp S  &kp D      &kp F          &kp C_MUTE  &kp C_VOL_UP    &kp C_VOL_DN  &trans   &trans
                      &kp B  &mo ARK_L  &kp SPACE      &trans      &to HRA         &trans
                         >;
                 };
